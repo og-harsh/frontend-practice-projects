@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("assets/images/image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 40px;
+    background: transparent;
+    z-index: 2;
+}
+
+nav img {
+    color: red;
+    width: 124px;
+    position: relative;
+    z-index: 10;
+    ;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("assets/images/image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    gap: 20px;
+}    
+.title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2 2 4px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.subtext {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.input-box input{
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.input-box button{
+    background-color: #d10c0c;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.separation {
+    width: 100%;
+    height: 11px;
+    background-color: rgb(110, 107, 107);
+}
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.language-static {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+}
+
+
+.signin-btn {
+  background-color: #e50914;
+  border: none;
+  padding: 6px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+

@@ -1,0 +1,82 @@
+ 
+
+ .sidebar a:hover,
+ .sidebar .active {
+     background-color: #f0f0f0;
+ }
+body {
+     overflow-x: hidden;
+ }
+
+ .sidebar {
+     height: 200vh;
+     background-color: #fff;
+     border-right: 1px solid #ddd;
+     padding-top: 20px;
+     position: sticky;
+     top: 0;
+ }
+
+ .sidebar a {
+     text-decoration: none;
+     display: block;
+     padding: 8px 160px;
+     color: #333;
+     font-weight: 500;
+ }
+ .hero {
+     position: relative;
+     color: white;
+ }
+
+ .hero-text {
+     position: absolute;
+
+     top: 10%;
+     left: 5%;
+     color: white;
+ }
+
+ .hero-text h1 {
+     font-size: 4rem;
+     font-weight: lighter;
+ }
+
+ .hero-text p {
+     font-size: 2rem;
+ }
+
+ .hero-text .btn {
+     margin-top: 20px;
+ }
+
+ .top-icons {
+     position: absolute;
+     right: 200px;
+     top: 20px;
+     z-index: 1000;
+ }
+
+ .top-icons i {
+     font-size: 20px;
+     margin-left: 20px;
+     cursor: pointer;
+ }
+
+ img.end-img {
+     width: 85%;
+     height: auto;
+     display: block;
+ }
+
+ a {
+     font-size: large;
+ }
+
+ .card-img-top {
+     height: 260px;
+     width: 210px;
+     filter: grayscale(80%);
+     transition: 0.3s ease;
+
+ }

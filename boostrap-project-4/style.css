@@ -1,0 +1,93 @@
+.navbar.navbar-expand-lg {
+    background-color: #1e2a38;
+    margin-bottom: 30px;
+
+}
+
+.nav-link {
+    color: white;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
+
+.col-md-7.col-sm-12 {
+    margin-left: 150px;
+}
+.profile-img-top{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container.mt-2.text-center {
+    display: flex;
+}
+
+.card-group {
+    gap: 40px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 300px;
+    margin-left: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card-text{
+    margin-bottom:4px ;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px !important;
+    width: 100% !important;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container.mt-2.text-center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-4,
+  .col-md-7,
+  .col-md-4.col-sm-12,
+  .col-md-7.col-sm-12 {
+    margin-left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .profile-img-top,
+  .card-img-top {
+    width: 180px !important;
+    height: 180px !important;
+    margin-left: 0 !important;
+  }
+  .card-group {
+    flex-direction: column;
+    gap: 20px;
+    width: 100% !important;
+  }
+  .card {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  h1, h2, h6 {
+    text-align: center !important;
+  }
+  #projects .card-group,
+  #services .card-group {
+    width: 100% !important;
+  }
+}

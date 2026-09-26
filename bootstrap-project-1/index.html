@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-custom fixed-top py-0">
+    <div class="container-fluid px-0">
+
+        <div class="d-flex" id="main-nav-links">
+
+            <a class="navbar-brand m-0" href="#">
+                <i class="bi bi-house-fill"></i> Logo
+            </a>
+
+            <a class="nav-link" href="#team">Team</a>
+            <a class="nav-link" href="#work">Work</a>
+            <a class="nav-link" href="#price">Price</a>
+            <a class="nav-link" href="#contact">Contact</a>
+
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#">Dropdown</a>
+                <div class="dropdown-menu p-0">
+                    <a class="dropdown-item" href="#">Link</a>
+                    <a class="dropdown-item" href="#">Link</a>
+                    <a class="dropdown-item" href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center me-3">
+             <div class="icon me-3"> <i class="bi bi-search search-icon"></i>
+             </div>
+             <i class="bi bi-list list-icon" id="hamburger-icon"></i>
+        </div>
+        
+    </div>
+</nav>
+
+<div class="sidebar" id="my-sidebar">
+    <a href="#" class="close-sidebar-btn" id="close-sidebar-btn">&times;</a>
+    <a href="#team">Team</a>
+    <a href="#work">Work</a>
+    <a href="#price">Price</a>
+    <a href="#contact">Contact</a>
+    <a href="#">Dropdown Link 1</a>
+    <a href="#">Dropdown Link 2</a>
+</div>
+
+    
+    <!-- image setion -->
+    <div class="row">
+        <div class="img-container animate-opacity">
+            <img src="assets/images/sailboat.jpg" alt="boat" style="width:100%;min-height: 350px; max-height: 600px;">
+            <button class="btn btn-dark btn-over">LEARN W3.CSS</button>
+        </div>
+    </div>
+
+    <!-- our teams section -->
+    <div class="section p-5" id="team">
+        <div class="text-center pt-5">
+            <h2 class="pb-3 fw-normal">OUR TEAM</h2>
+            <P>Meet the team - our office rats:</P>
+        </div>
+    </div>
+
+    <div class="row text-center mb-5">
+        <!-- Profile 1 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="assets/images/avatar.jpg" class="rounded-circle img-fluid mb-2" alt="Johnny Walker" width="180"
+                height="180">
+            <h5 class="mb-0">Johnny Walker</h5>
+            <small class="text-muted">Web Designer</small>
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="assets/images/avatar.jpg" class="rounded-circle img-fluid mb-2" alt="Rebecca Flex" width="180"
+                height="180">
+            <h5 class="mb-0">Rebecca Flex</h5>
+            <small class="text-muted">Support</small>
+        </div>
+
+        <!-- Profile 3 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="assets/images/avatar.jpg" class="rounded-circle img-fluid mb-2" alt="Jan Ringo" width="180"
+                height="180">
+            <h5 class="mb-0">Jan Ringo</h5>
+            <small class="text-muted">Boss man</small>
+        </div>
+
+        <!-- Profile 4 -->
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="assets/images/avatar.jpg" class="rounded-circle img-fluid mb-2" alt="Kai Ringo" width="180"
+                height="180">
+            <h5 class="mb-0">Kai Ringo</h5>
+            <small class="text-muted">Fixer</small>
+        </div>
+    </div>
+
+    <!-- work section -->
+    <div class="card-group px-4" id="work">
+        <div class="row  align-items-start">
+
+            <!-- Left Text Column -->
+            <div class="col-md-3 p-2">
+                <h2 class="mt-5">OUR WORK</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+            </div>
+
+            <!-- Right Cards Column -->
+
+
+            <!-- Card 1 -->
+            <div class="col-md-3 my-5">
+                <div class="card">
+                    <img src="assets/images/snow.jpg" class="card-img-top rounded-0" alt="Customer 1">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Customer 1</h5>
+                        <p class="mb-1 fw-normal fs-5">Trade</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3 my-5 ">
+                <div class="card">
+                    <img src="assets/images/lights.jpg" class="card-img-top rounded-0" alt="Customer 2">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Customer 2</h5>
+                        <p class="mb-1 fw-normal fs-5">Trade</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3 py-5">
+                <div class="card">
+                    <img src="assets/images/mountains.jpg" class="card-img-top rounded-0" alt="Customer 3">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Customer 3</h5>
+                        <p class="mb-1 fw-normal fs-5">Trade</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <!-- pricing section -->
+    <div class="main p-5" id="price">
+        <div class="text-center fw-normal mb-4">
+            <h2 class="fw-normal">PRICING</h2>
+            <p>Choose a pricing plan that fits your needs.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Basic Plan -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <div class="pricing-header bg-basic p-4">Basic</div>
+                    <ul class="pricing-features">
+                        <li><strong>10GB</strong> Storage</li>
+                        <li><strong>10</strong> Emails</li>
+                        <li><strong>10</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                    </ul>
+                    <div class="price">$ 10</div>
+                    <p>per month</p>
+                    <div class="p-4 bg-light">
+                        <button class="btn-pricing"><i class="bi bi-check2"></i> Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <div class="pricing-header bg-pro p-4">Pro</div>
+                    <ul class="pricing-features">
+                        <li><strong>25GB</strong> Storage</li>
+                        <li><strong>25</strong> Emails</li>
+                        <li><strong>25</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                    </ul>
+                    <div class="price">$ 25</div>
+                    <p>per month</p>
+                    <div class="p-4 bg-light">
+                        <button class="btn-pricing"><i class="bi bi-check2"></i> Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <div class="pricing-header bg-premium  p-4">Premium</div>
+                    <ul class="pricing-features">
+                        <li><strong>50GB</strong> Storage</li>
+                        <li><strong>50</strong> Emails</li>
+                        <li><strong>50</strong> Domains</li>
+                        <li><strong>Endless</strong> Support</li>
+                    </ul>
+                    <div class="price">$ 50</div>
+                    <p>per month</p>
+                    <div class="p-4 bg-light">
+                        <button class="btn-pricing"><i class="bi bi-check2"></i> Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="contact-section px-3" id="contact">
+
+        <!-- Left Side Info -->
+        <div class="contact-info col-lg-5">
+            <h2 class="fw-narmal">Contact Us</h2>
+            <h4>Address</h4>
+            <p>Swing by for a cup of coffee, or whatever.</p>
+            <p>📍 Chicago, US</p>
+            <p>📞 +00 1515151515</p>
+            <p>📧 <a href="mailto:test@test.com"
+                    class="text-decoration-none text-black p-1">test@test.com</a></p>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="contact-card col-md-7">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <hr>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <hr>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <hr>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input bg-success" type="checkbox" value="" id="likeCheck" checked>
+                    <label class="form-check-label" for="likeCheck">
+                        I Like it!
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-black float-lg-end  border-0">Send</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- map section -->
+    <div class="image-section">
+        <img src="assets/images/map.jpg" alt="map" style="height: 100%; width: 100%;">
+    </div>
+
+  <!-- footer section -->
+<footer class="footer">
+    <h5>Follow Us</h5>
+    <div class="social-icons my-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-google"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+    
+    <p>Powered by <a href="#" class="text-decoration-none" style="color: white;">TESLA</a></p>
+    <a href="#" class="back-to-top"><i class="bi bi-chevron-up"></i></a>
+
+
+
+</body>
+
+</html>

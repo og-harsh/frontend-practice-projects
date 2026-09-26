@@ -1,0 +1,1679 @@
+   :root {
+       --neon-cyan: #00C4F4;
+       --dark-bg: #020b16;
+       --dark-overlay: rgba(2, 11, 22, 0.85);
+       --card-blue: #0d6efd;
+
+
+       --step-1-color: #00c3ff;
+       /* Cyan */
+       --step-2-color: #ffaa00;
+       /* Orange */
+       --step-3-color: #007bff;
+       /* Blue */
+       --step-4-color: #ff4081;
+       /* Pink */
+   }
+
+   body {
+       font-family: 'Inter', sans-serif;
+       background-color: var(--dark-bg);
+       color: white;
+       overflow-x: hidden;
+       padding: 0;
+       margin: 0;
+   }
+
+
+   /* --- BACKGROUND & DECORATION --- */
+   .hero-section {
+       max-height: fit-content;
+
+
+
+   }
+
+   .bg-space {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 720px;
+       z-index: -2;
+       background-image: url('https://webgraminfotech.com/xrp_claude/website/img/banner/banner_bg.jpg');
+       /* Placeholder for user image: background-image: url('path/to/space-bg.jpg'); */
+       background-size: cover;
+       background-position: center;
+       opacity: 0.5;
+   }
+
+   /* Floating Balls Base Style */
+   .float-ball {
+       position: absolute;
+       border-radius: 50%;
+       z-index: -1;
+
+
+   }
+
+   /* Specific Positions */
+   .ball-1 {
+
+       width: 169px;
+       height: auto;
+       top: 28%;
+       left: -3px;
+       animation: leftToRight 5s infinite linear;
+   }
+
+   .ball-2 {
+       position: absolute;
+       width: 66px;
+       height: 66px;
+       left: auto;
+       right: 8%;
+       top: 20%;
+
+   }
+
+   .ball-3 {
+       position: absolute;
+       width: 146px;
+       height: auto;
+       left: auto;
+       right: 0%;
+       top: auto;
+       bottom: 14%;
+   }
+
+   /* --- NAVBAR --- */
+   .navbar {
+
+       padding: 30px 0;
+   }
+
+   .logo-x {
+       width: 65px;
+       height: 65px;
+
+       /* Placeholder styling for Logo */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+   }
+
+   .nav-link {
+       color: white !important;
+       font-weight: 700;
+       font-size: 0.9rem;
+       letter-spacing: 1px;
+       margin: 0 15px;
+       transition: color 0.3s ease;
+   }
+
+   .nav-link:hover {
+       color: var(--neon-cyan) !important;
+   }
+
+   .cta-btn {
+       background-color: var(--neon-cyan);
+       color: #ffffff;
+       font-weight: 600;
+       border: none;
+       padding: 12px 30px;
+       border-radius: 4px;
+       text-transform: uppercase;
+       letter-spacing: 0.5px;
+
+   }
+
+
+   /* --- HERO SECTION --- */
+   .hero-section {
+       max-height: 720px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       overflow: hidden;
+   }
+
+   .hero-content {
+       text-align: center;
+       max-width: 900px;
+       z-index: 2;
+       position: relative;
+       margin: 130px 199px 0px;
+       ;
+   }
+
+   h1 {
+       font-size: 55px;
+       margin-bottom: 45px;
+       line-height: 1.4;
+       letter-spacing: -0.01em;
+       font-weight: 700;
+   }
+
+   .xrp-text {
+       color: var(--neon-cyan);
+       text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+   }
+
+   .subheadline {
+       font-size: 16px;
+       color: #ffffff;
+       opacity: 1;
+       margin-bottom: 4rem;
+       font-weight: 400;
+       max-width: 700px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   /* --- SLIDER SECTION --- */
+   .slider-container {
+       width: 100%;
+       max-width: 796px;
+       margin: 100px auto 0;
+       position: relative;
+   }
+
+   .slider-label-top {
+       color: var(--neon-cyan);
+       font-size: 0.8rem;
+       font-weight: 700;
+       text-transform: uppercase;
+       position: absolute;
+       left: 50%;
+       /* Center it roughly for the demo */
+       transform: translateX(-50%);
+       top: -25px;
+   }
+
+   /* Custom Range Slider Styling */
+   input[type=range] {
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+       width: 100%;
+       background: transparent;
+   }
+
+   input[type=range]::-webkit-slider-thumb {
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+   }
+
+   input[type=range]:focus {
+       outline: none;
+   }
+
+   /* The Track */
+   .custom-range {
+       width: 100%;
+       height: 6px;
+       background: rgba(255, 255, 255, 0.2);
+       border-radius: 3px;
+       outline: none;
+       position: relative;
+   }
+
+   /* The Progress Fill (simulated with gradient for demo) */
+   .custom-range::-webkit-slider-runnable-track {
+       width: 100%;
+       height: 6px;
+       cursor: pointer;
+       background: linear-gradient(90deg, var(--neon-cyan) 50%, rgba(255, 255, 255, 0.2) 50%);
+       border-radius: 3px;
+   }
+
+   /* The Knob */
+   .custom-range::-webkit-slider-thumb {
+       height: 24px;
+       width: 24px;
+       border-radius: 50%;
+       background: #fff;
+       border: 4px solid var(--neon-cyan);
+       cursor: pointer;
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+       margin-top: -9px;
+       /* Centers thumb on track */
+       box-shadow: 0 0 15px var(--neon-cyan);
+   }
+
+   /* Firefox styles for slider */
+   .custom-range::-moz-range-track {
+       width: 100%;
+       height: 6px;
+       cursor: pointer;
+       background: rgba(255, 255, 255, 0.2);
+       border-radius: 3px;
+   }
+
+   .custom-range::-moz-range-progress {
+       background-color: var(--neon-cyan);
+       height: 6px;
+       border-radius: 3px;
+   }
+
+   .custom-range::-moz-range-thumb {
+       height: 24px;
+       width: 24px;
+       border: 4px solid var(--neon-cyan);
+       border-radius: 50%;
+       background: #fff;
+       cursor: pointer;
+       -moz-appearance: none;
+       appearance: none;
+       box-shadow: 0 0 15px var(--neon-cyan);
+   }
+
+   .slider-labels-bottom {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 15px;
+       font-size: 0.9rem;
+       font-weight: 700;
+       color: white;
+       letter-spacing: 0.5px;
+   }
+
+   /* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+   /* EXTRA LARGE SCREENS (1920px and above) */
+   @media (min-width: 1920px) {
+       h1 {
+           font-size: 65px;
+           margin-bottom: 50px;
+       }
+
+       .hero-content {
+           margin: 160px 250px 0;
+       }
+
+       .subheadline {
+           font-size: 18px;
+           margin-bottom: 5rem;
+       }
+
+       .slider-container {
+           max-width: 900px;
+           margin: 120px auto 0;
+       }
+
+       .nav-link {
+           font-size: 1rem;
+           margin: 0 20px;
+       }
+
+       .logo-x {
+           width: 80px;
+           height: 80px;
+       }
+
+       .ball-1 {
+           width: 200px;
+           top: 25%;
+           left: 0;
+       }
+
+       .ball-2 {
+           width: 80px;
+           height: 80px;
+           right: 10%;
+           top: 15%;
+       }
+
+       .ball-3 {
+           width: 170px;
+           right: auto;
+           bottom: 15%;
+       }
+   }
+
+   /* LARGE SCREENS (1200px to 1919px) */
+   @media (min-width: 1200px) and (max-width: 1919px) {
+       h1 {
+           font-size: 55px;
+           margin-bottom: 45px;
+       }
+
+       .hero-content {
+           margin: 130px 199px 0;
+       }
+
+       .subheadline {
+           font-size: 16px;
+           margin-bottom: 4rem;
+       }
+
+       .slider-container {
+           max-width: 796px;
+           margin: 100px auto 100px;
+       }
+
+       .nav-link {
+           font-size: 0.9rem;
+           margin: 0 15px;
+       }
+
+       .logo-x {
+           width: 65px;
+           height: 65px;
+       }
+
+       .ball-1 {
+           width: 169px;
+           top: 28%;
+           left: -3px;
+       }
+
+       .ball-2 {
+           width: 66px;
+           height: 66px;
+           right: 8%;
+           top: 20%;
+       }
+
+       .ball-3 {
+           width: 146px;
+           right: 2%;
+           bottom: 14%;
+       }
+   }
+
+   /* MEDIUM SCREENS - TABLETS (992px to 1199px) */
+   @media (max-width: 1199px) and (min-width: 992px) {
+       h1 {
+           font-size: 48px;
+           margin-bottom: 35px;
+           line-height: 1.35;
+       }
+
+       .hero-content {
+           margin: 100px 80px 0;
+       }
+
+       .subheadline {
+           font-size: 15px;
+           margin-bottom: 3.5rem;
+           max-width: 650px;
+       }
+
+       .slider-container {
+           max-width: 700px;
+           margin: 80px auto 0;
+       }
+
+       .navbar {
+           padding: 25px 0;
+       }
+
+       .nav-link {
+           font-size: 0.85rem;
+           margin: 0 12px;
+       }
+
+       .logo-x {
+           width: 58px;
+           height: 58px;
+       }
+
+       .cta-btn {
+           padding: 11px 25px;
+           font-size: 0.85rem;
+       }
+
+       .ball-1 {
+           width: 140px;
+           top: 30%;
+           left: -20px;
+       }
+
+       .ball-2 {
+           width: 55px;
+           height: 55px;
+           right: 5%;
+           top: 22%;
+       }
+
+       .ball-3 {
+           width: 120px;
+           right: 2%;
+           bottom: 15%;
+       }
+
+       .bg-space {
+           height: 600px;
+       }
+
+       .hero-section {
+           max-height: 600px;
+       }
+
+       .slider-label-top {
+           font-size: 0.75rem;
+           top: -22px;
+       }
+
+       .slider-labels-bottom {
+           font-size: 0.85rem;
+           margin-top: 12px;
+       }
+     
+   }
+
+   /* SMALL TABLETS (768px to 991px) */
+   @media (max-width: 991px) and (min-width: 768px) {
+       h1 {
+           font-size: 40px;
+           margin-bottom: 30px;
+           line-height: 1.3;
+       }
+
+       .hero-content {
+           margin: 80px 40px 0;
+           max-width: 100%;
+       }
+
+       .subheadline {
+           font-size: 14px;
+           margin-bottom: 3rem;
+           max-width: 600px;
+       }
+
+       .slider-container {
+           max-width: 600px;
+           margin: 60px auto 0;
+       }
+
+       .navbar {
+           padding: 20px 0;
+       }
+
+       .nav-link {
+           font-size: 0.8rem;
+           margin: 0 8px;
+       }
+
+       .logo-x {
+           width: 52px;
+           height: 52px;
+       }
+
+       .cta-btn {
+           padding: 10px 20px;
+           font-size: 0.8rem;
+       }
+
+       .ball-1 {
+           width: 110px;
+           top: 32%;
+           left: -40px;
+       }
+
+       .ball-2 {
+           width: 45px;
+           height: 45px;
+           right: 2%;
+           top: 25%;
+       }
+
+       .ball-3 {
+           width: 100px;
+           right: 2%;
+           bottom: 18%;
+       }
+
+       .bg-space {
+           height: 500px;
+       }
+
+       .hero-section {
+           max-height: 500px;
+       }
+
+       .slider-label-top {
+           font-size: 0.7rem;
+           top: -20px;
+       }
+
+       .slider-labels-bottom {
+           font-size: 0.8rem;
+           margin-top: 10px;
+       }
+   }
+
+   /* MOBILE LANDSCAPE & LARGE PHONES (600px to 767px) */
+   @media (max-width: 767px) and (min-width: 600px) {
+       h1 {
+           font-size: 32px;
+           margin-bottom: 25px;
+           line-height: 1.25;
+       }
+
+       .hero-content {
+           margin: 60px 20px 60px;
+           max-width: 100%;
+       }
+
+       .subheadline {
+           font-size: 13px;
+           margin-bottom: 2.5rem;
+           max-width: 550px;
+           line-height: 1.6;
+       }
+
+       .slider-container {
+           max-width: 550px;
+           margin: 45px auto 0;
+           padding: 0 15px;
+       }
+
+       .navbar {
+           padding: 18px 0;
+       }
+
+       .nav-link {
+           font-size: 0.75rem;
+           margin: 0 5px;
+       }
+
+       .logo-x {
+           width: 48px;
+           height: 48px;
+       }
+
+       .cta-btn {
+           padding: 9px 18px;
+           font-size: 0.75rem;
+       }
+
+       .ball-1 {
+           width: 90px;
+           top: 35%;
+           left: -50px;
+       }
+
+       .ball-2 {
+           width: 40px;
+           height: 40px;
+           right: 1%;
+           top: 28%;
+       }
+
+       .ball-3 {
+           width: 85px;
+           right: 2%;
+           bottom: 20%;
+       }
+
+       .bg-space {
+           height: 450px;
+       }
+
+       .hero-section {
+           max-height: 450px;
+       }
+
+       .slider-label-top {
+           font-size: 0.65rem;
+           top: -18px;
+       }
+
+       .slider-labels-bottom {
+           font-size: 0.75rem;
+           margin-top: 10px;
+           flex-direction: column;
+           gap: 8px;
+       }
+
+       .imglogo-x {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+   }
+
+   /* SMALL PHONES (480px to 599px) */
+   @media (max-width: 599px) and (min-width: 480px) {
+       h1 {
+           font-size: 26px;
+           margin-bottom: 20px;
+           line-height: 1.2;
+       }
+
+       .hero-content {
+           margin: 50px 15px 0;
+           max-width: 100%;
+       }
+
+       .subheadline {
+           font-size: 12px;
+           margin-bottom: 2rem;
+           max-width: 100%;
+           line-height: 1.5;
+       }
+
+       .slider-container {
+           max-width: 100%;
+           margin: 35px 15px 0;
+           padding: 0 10px;
+       }
+
+       .navbar {
+           padding: 15px 0;
+       }
+
+       .nav-link {
+           font-size: 0.7rem;
+           margin: 8px 0;
+           display: block;
+       }
+
+       .navbar-nav {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .logo-x {
+           width: 44px;
+           height: 44px;
+       }
+
+       .cta-btn {
+           padding: 8px 16px;
+           font-size: 0.7rem;
+       }
+
+       .ball-1 {
+           width: 70px;
+           top: 38%;
+           left: -60px;
+       }
+
+       .ball-2 {
+           width: 35px;
+           height: 35px;
+           right: 0%;
+           top: 30%;
+       }
+
+       .ball-3 {
+           width: 70px;
+           right: 2%;
+           bottom: 22%;
+       }
+
+       .bg-space {
+           height: 400px;
+       }
+
+       .hero-section {
+           max-height: 400px;
+       }
+
+       .slider-label-top {
+           font-size: 0.6rem;
+           top: -16px;
+       }
+
+       .slider-labels-bottom {
+           font-size: 0.7rem;
+           margin-top: 8px;
+           flex-direction: column;
+           gap: 6px;
+       }
+
+       .custom-range {
+           height: 5px;
+       }
+
+       .custom-range::-webkit-slider-thumb {
+           height: 20px;
+           width: 20px;
+           margin-top: -7.5px;
+       }
+
+       .custom-range::-moz-range-thumb {
+           height: 20px;
+           width: 20px;
+       }
+   }
+
+   /* EXTRA SMALL PHONES (up to 479px) */
+   @media (max-width: 479px) {
+       h1 {
+           font-size: 30px;
+        margin-bottom: 22px;
+        line-height: 1.5;
+       }
+
+       .hero-content {
+           margin: 50px 12px 50px;
+           max-width: 100%;
+       }
+
+       .subheadline {
+           font-size: 15px;
+           margin-bottom: 1.5rem;
+           max-width: 100%;
+           line-height: 1.4;
+       }
+
+       .slider-container {
+           max-width: 100%;
+           margin: 25px 12px 0;
+           padding: 0 8px;
+       }
+
+       .navbar {
+           padding: 30px 0;
+       }
+
+       .nav-link {
+           font-size: 0.65rem;
+           margin: 6px 0;
+           display: block;
+       }
+
+       .navbar-nav {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .logo-x {
+           width: 50px;
+           height: 55px;
+       }
+
+       .cta-btn {
+           padding: 7px 14px;
+           font-size: 0.65rem;
+       }
+
+       .ball-1 {
+           width: 60px;
+           top: 40%;
+           left: -70px;
+       }
+
+       .ball-2 {
+           width: 30px;
+           height: 30px;
+           right: -2%;
+           top: 32%;
+       }
+
+       .ball-3 {
+           width: 60px;
+           right: 0%;
+           bottom: 25%;
+       }
+
+       .bg-space {
+           height: 350px;
+       }
+
+       .hero-section {
+           max-height: 350px;
+       }
+
+       .slider-label-top {
+           font-size: 0.55rem;
+           top: -15px;
+       }
+
+       .slider-labels-bottom {
+           font-size: 0.65rem;
+           margin-top: 6px;
+           flex-direction: column;
+           gap: 5px;
+       }
+
+       .custom-range {
+           height: 4px;
+       }
+
+       .custom-range::-webkit-slider-thumb {
+           height: 18px;
+           width: 18px;
+           margin-top: -7px;
+       }
+
+       .custom-range::-moz-range-thumb {
+           height: 18px;
+           width: 18px;
+       }
+
+       .custom-range::-webkit-slider-thumb {
+           box-shadow: 0 0 10px var(--neon-cyan);
+       }
+
+       .custom-range::-moz-range-thumb {
+           box-shadow: 0 0 10px var(--neon-cyan);
+       }
+   }
+
+   /* PRINT MEDIA */
+   @media print {
+       .bg-space {
+           background-image: none;
+           background-color: var(--dark-bg);
+       }
+
+       .float-ball {
+           display: none;
+       }
+
+       h1 {
+           color: #000;
+       }
+
+       .subheadline {
+           color: #333;
+       }
+   }
+
+
+   /* Main Section Container */
+   .earn-section {
+       position: relative;
+       background-color: var(--section-bg);
+
+
+       background-image: url('https://webgraminfotech.com/xrp_claude/website/img/bg/choose_bg.jpg');
+       background-size: cover;
+
+       background-position: center;
+       background-repeat: no-repeat;
+       max-width: 100%;
+       height: 846px;
+   }
+
+   /* Top Divider (The white line image) */
+   .section-divider-top {
+       width: 100%;
+       height: auto;
+       position: relative;
+       top: -2px;
+       z-index: 10;
+       line-height: 0;
+   }
+
+   .container2 {
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 130px 0px;
+   }
+
+   .section-divider-top img {
+       width: 100%;
+       display: block;
+   }
+
+   /* Left Column: Phone Image & Glow */
+   .phone-container {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 500px;
+   }
+
+   /* Glow effect behind the phone */
+   .phone-glow {
+       position: absolute;
+       width: 300px;
+       height: 400px;
+       background: linear-gradient(135deg, #00E5FF 0%, #0d6efd 100%);
+       filter: blur(80px);
+
+       border-radius: 50%;
+   }
+
+   /* Phone Image Placeholder */
+   .phone-img-placeholder {
+       position: relative;
+       width: 100%;
+       max-width: 450px;
+       height: auto;
+       border-radius: 30px;
+   }
+
+   /* Right Column: Calculator Card */
+   .earn-card {
+       background: #ffffff;
+       box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
+       border-radius: 20px;
+       padding: 64px 75px 33px;
+       position: relative;
+       margin-top: -120px;
+       margin-bottom: 10px;
+   }
+
+   .earn-card h2 {
+       font-weight: 800;
+       color: #000;
+       margin-bottom: 1.5rem;
+   }
+
+   .input-group-text {
+       background: #e9ecef;
+       border: 1px solid #ced4da;
+       font-weight: 600;
+       color: #333;
+   }
+
+   .form-control-lg {
+       border: 1px solid #ced4da;
+       font-size: 1.25rem;
+       font-weight: 600;
+   }
+
+   /* Green slider for this card specifically */
+   .range-green {
+       accent-color: #198754;
+       width: 100%;
+       height: 6px;
+       margin-top: 1.5rem;
+       margin-bottom: 0.5rem;
+       cursor: pointer;
+   }
+
+   .earn-amount {
+       color: var(--card-blue);
+       font-weight: 800;
+   }
+
+   .interest-note {
+       font-size: 0.95rem;
+       color: #6c757d;
+       line-height: 1.6;
+   }
+
+   /* media query or earn section */
+    @media (max-width: 992px) {
+         .earn-section {
+              height: auto;
+              padding: 60px 0;
+         }
+    
+         .container2 {
+              padding: 60px 20px;
+         }
+         .price-card {
+             
+              padding: 40px 30px 20px !important;
+              gap: 20px !important;
+         }
+    
+         
+    }
+    @media (max-width: 576px) {
+         .earn-section {
+              padding: 40px 0;
+         }
+            .container2 {
+                padding: 40px 15px;
+    }
+    .earn-card {
+        padding: 40px 20px 20px;
+    
+
+    }
+    .price-floater-container {
+        margin-top: -40px!important;
+        margin-bottom: -40px!important;
+    }
+    .price-card {
+        padding: 30px 20px 15px !important;
+    }
+}
+   /* FLOATING PRICE CARD (Between Earn & How It Works) */
+
+   .price-floater-container {
+       position: relative;
+       z-index: 20;
+       /* Move it UP to overlap the seam between dark Earn section and White Roadmap section */
+       margin-top: -60px;
+       margin-bottom: -60px;
+       display: flex;
+       justify-content: center;
+       pointer-events: none;
+       /* Allows clicking through empty space if needed */
+   }
+
+   .price-card {
+       position: relative;
+       pointer-events: auto;
+       background: white;
+       border-radius: 20px;
+       padding: 64px 130px 33px;
+       display: flex;
+       align-items: center;
+       gap: 35px;
+       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+       border: 1px solid rgba(0, 0, 0, 0.05);
+       margin-bottom: -34px;
+       margin-top: -29px;
+   }
+
+   .shield-icon-img {
+       width: 71px;
+       height: 85px;
+       object-fit: contain;
+   }
+
+   .price-text-group h3 {
+       color: #000;
+       font-weight: 800;
+       margin: 0;
+       font-size: 2.5rem;
+       line-height: 1;
+   }
+
+   .price-text-group span {
+       color: #6c757d;
+       font-size: 0.85rem;
+       font-weight: 700;
+       text-transform: uppercase;
+       letter-spacing: 0.5px;
+   }
+
+   /* =========================================
+           HOW IT WORKS (Roadmap) SECTION
+           ========================================= */
+   .roadmap-section {
+       background-color: #fff;
+       color: #000;
+       padding-top: 150px;
+       /* Space for the floating box overlap */
+       padding-bottom: 100px;
+       text-align: center;
+   }
+
+   .roadmap-label {
+       color: #564DCA;
+       letter-spacing: 0.02em;
+       padding: 0;
+       text-decoration: underline;
+       margin-bottom: 18px;
+       font-weight: 800;
+   }
+
+   .roadmap-title {
+       font-size: 40px;
+       font-weight: 700;
+
+   }
+
+   .roadmap-desc {
+       font-size: 16px;
+       font-weight: normal;
+       line-height: 1.75;
+       color: #727885;
+       margin-bottom: 15px;
+   }
+
+   /* --- 2. Timeline Container --- */
+   .timeline-wrapper {
+       position: relative;
+       padding-top: 8px;
+       margin-top: 65px;
+   }
+
+   /* --- 3. The Horizontal Background Line --- */
+   /* This sits behind the columns and connects the dots */
+   .timeline-line-bg {
+       position: absolute;
+       top: 60px;
+       /* Adjusts vertical position of the horizontal line */
+       left: 15px;
+       right: 15px;
+       height: 6px;
+       /* Gradient to match the image (fading from blue to pink) */
+       background: linear-gradient(90deg, #e1f5fe 0%, #fff3e0 33%, #e3f2fd 66%, #fce4ec 100%);
+       z-index: 0;
+       border-radius: 10px;
+   }
+
+   /* --- 4. Individual Step Styling --- */
+   .step-col {
+       position: relative;
+       z-index: 1;
+       /* Ensures content sits above the background line */
+   }
+
+   /* Upper Label (e.g., GET STARTED...) */
+   .step-label {
+       font-weight: 700;
+       font-size: 0.85rem;
+       text-transform: uppercase;
+       margin-bottom: 25px;
+       /* Space between label and dot */
+       letter-spacing: 0.5px;
+   }
+
+   /* The Dot */
+   .step-dot {
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+       background-color: white;
+       /* Center is usually white or solid */
+       border: 4px solid;
+       /* The colored ring */
+       /* margin-bottom: 15px; */
+       position: relative;
+       /* Create the outer 'halo' effect seen in the image */
+       box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.8);
+   }
+
+   /* The Vertical Line dropping down */
+   .step-content-wrapper {
+       border-left: 1px solid;
+       /* The vertical line */
+       padding-left: 20px;
+       /* Space between line and text */
+       margin-left: 9px;
+       /* Aligns line with the center of the 20px dot */
+       min-height: 150px;
+       /* Ensures consistent height */
+   }
+
+   /* Text Styling */
+   .step-title {
+       font-weight: 700;
+       color: #000;
+       margin-bottom: 10px;
+       font-size: 1.1rem;
+   }
+
+   .step-desc {
+       color: #6c757d;
+       font-size: 0.95rem;
+       line-height: 1.5;
+   }
+
+   /* --- 5. Specific Color Application --- */
+   /* Step 1 */
+   .s1 .step-label {
+       color: var(--step-1-color);
+   }
+
+   .s1 .step-dot {
+       border-color: var(--step-1-color);
+       background-color: var(--step-1-color);
+   }
+
+   .s1 .step-content-wrapper {
+       border-left-color: var(--step-1-color);
+   }
+
+   /* Step 2 */
+   .s2 .step-label {
+       color: var(--step-2-color);
+   }
+
+   .s2 .step-dot {
+       border-color: var(--step-2-color);
+       background-color: var(--step-2-color);
+   }
+
+   .s2 .step-content-wrapper {
+       border-left-color: var(--step-2-color);
+   }
+
+   /* Step 3 */
+   .s3 .step-label {
+       color: var(--step-3-color);
+   }
+
+   .s3 .step-dot {
+       border-color: var(--step-3-color);
+       background-color: var(--step-3-color);
+   }
+
+   .s3 .step-content-wrapper {
+       border-left-color: var(--step-3-color);
+   }
+
+   /* Step 4 */
+   .s4 .step-label {
+       color: var(--step-4-color);
+   }
+
+   .s4 .step-dot {
+       border-color: var(--step-4-color);
+       background-color: var(--step-4-color);
+   }
+
+   .s4 .step-content-wrapper {
+       border-left-color: var(--step-4-color);
+   }
+
+   /* Mobile Fix: Hide the horizontal line on small screens */
+   @media (max-width: 768px) {
+       .timeline-line-bg {
+           display: none;
+       }
+
+       .step-col {
+           margin-bottom: 30px;
+       }
+   }
+
+   /* 1. Main Section Background */
+   .trust-section {
+       position: relative;
+       /* Yahan apni dark background image ka URL dalein */
+       background-image: url('https://webgraminfotech.com/xrp_claude/website/img/bg/choose_bg.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       /* Agar image nahi load hui to ye color dikhega (Dark Blue/Teal gradient) */
+       background-color: #050a1e;
+       color: #ffffff;
+       padding-bottom: 180px;
+       width: auto;
+       height: 810px;
+   }
+
+   /* 2. Top White Divider (Tedi Medi Line) */
+   .top-divider-img {
+       width: 100%;
+       display: block;
+       margin-top: -2px;
+       /* Thoda adjust karne ke liye taaki gap na dikhe */
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 1;
+   }
+
+   /* Content ko thoda neeche push karne ke liye taaki divider ke neeche na chupe */
+   .trust-content {
+       padding-top: 130px;
+       /* Adjust based on divider height */
+       position: relative;
+       z-index: 2;
+   }
+
+   /* 3. Typography */
+   .sub-label {
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 14px;
+       font-weight: 700;
+       position: relative;
+       letter-spacing: 0.09em;
+       display: inline-block;
+       padding: 0 15px;
+       margin-bottom: 25px;
+
+   }
+
+   /* Dots around "WHY USERS CHOOSE US" */
+   .sub-label::before,
+   .sub-label::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       top: 50%;
+       transform: translateY(-50%);
+       width: 10px;
+       height: 10px;
+       background: #00C4F4;
+       border-radius: 50%;
+   }
+
+   .sub-label::after {
+       right: 0;
+       left: auto;
+   }
+
+   .main-heading {
+       font-weight: 700;
+       font-size: 2.5rem;
+       margin-bottom: 20px;
+   }
+
+   .section-desc {
+       font-size: 16px;
+       font-weight: normal;
+       line-height: 1.75;
+       color: #727885;
+       margin-bottom: 15px;
+   }
+
+   /* 4. Cards Styling */
+   .feature-card {
+       padding: 65px;
+   }
+
+   .card-icon {
+       width: 50px;
+       /* Icon size */
+       height: auto;
+       margin-bottom: 25px;
+   }
+
+   .card-title {
+       font-size: 22px;
+       font-weight: 400;
+       margin-bottom: 15px;
+   }
+
+   .card-text {
+       margin-bottom: 0px;
+       font-size: 15px;
+       line-height: 22px;
+       color: #A4B4C3;
+
+   }
+
+   .bottom-divider-img {
+       width: 100%;
+       display: block;
+       /* margin-top: -2px; */
+       /* Thoda adjust karne ke liye taaki gap na dikhe */
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       z-index: 1;
+   }
+
+   /* Mobile Responsive adjustments */
+   @media (max-width: 992px) {
+       .trust-section {
+           height: auto;
+           padding: 80px 0 100px;
+       }
+
+       .feature-card {
+           padding: 30px;
+           margin-bottom: 30px;
+       }
+   }
+   @media (max-width: 576px) {
+       .trust-section {
+           padding: 60px 0 80px;
+       }
+
+       .feature-card {
+           padding: 20px;
+           margin-bottom: 20px;
+       }
+   }
+
+   /* =========================
+             FAQ AREA 
+      =========================       */
+
+
+
+   .faq-section {
+       position: relative;
+       padding: 100px 0;
+       margin-top: 141px;
+       background-color: #f8faff;
+       overflow: hidden;
+   }
+
+
+   .faq-content-relative {
+       position: relative;
+       z-index: 10;
+   }
+
+
+   .shape-bg-center {
+       position: absolute;
+       top: 78%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 80%;
+       max-width: 800px;
+       opacity: 0.8;
+       z-index: 1;
+       pointer-events: none;
+   }
+
+   /* Shape 2: Top Right Squiggle */
+   .shape-top-right {
+       position: absolute;
+       top: 50px;
+       right: 5%;
+       width: 60px;
+       z-index: 2;
+   }
+
+   /* Shape 3: Bottom Left Spark */
+   .shape-bottom-left {
+       position: absolute;
+       bottom: 100px;
+       left: 5%;
+       width: 50px;
+       z-index: 2;
+   }
+
+
+   /* 3. Typography */
+   .faq-heading {
+       font-weight: 800;
+       color: #050a1e;
+       margin-bottom: 15px;
+   }
+
+   .faq-subheading {
+       color: #6c757d;
+       margin-bottom: 50px;
+   }
+
+
+   /* 4. Accordion (Question Boxes) Styling */
+
+
+   .custom-accordion .accordion-item {
+       border: none;
+       background: #fff;
+       border-radius: 16px;
+       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+       margin-bottom: 20px;
+       overflow: hidden;
+   }
+
+   /* The Question Button (Header) */
+   .custom-accordion .accordion-button {
+       font-weight: 700;
+       font-size: 1.1rem;
+       color: #050a1e;
+       background-color: #fff;
+       padding: 45px 60px;
+       border-radius: 40px;
+       box-shadow: none;
+   }
+
+
+   .custom-accordion .accordion-button:not(.collapsed) {
+       color: #050a1e;
+       background-color: #fff;
+       box-shadow: none;
+   }
+
+   /* The Answer Body */
+   .custom-accordion .accordion-body {
+       padding: 0 30px 30px 30px;
+       color: #6c757d;
+       line-height: 1.6;
+   }
+
+
+   .custom-accordion .accordion-collapse.show {
+       border-bottom: 4px solid #00c3ff;
+   }
+
+   .accordion-button::after {
+       filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(2970%) hue-rotate(204deg) brightness(93%) contrast(95%);
+       width: 1.5rem;
+       height: 1.5rem;
+       background-size: 1.5rem;
+   }
+
+   /* Mobile adjustments */
+   @media (max-width: 768px) {
+
+       .shape-top-right,
+       .shape-bottom-left {
+           display: none;
+           /* Mobile par choti shapes chupa sakte hain agar bheed lage */
+       }
+
+       .custom-accordion .accordion-button,
+       .custom-accordion .accordion-body {
+           padding: 20px;
+       }
+   }
+
+   /* ===== HERO SECTION STYLES ===== */
+
+   .contact-section {
+       width: 100%;
+       height: 503px;
+       color: white;
+       position: relative;
+       overflow: hidden;
+
+       /* Background Image Yahan Lagayein */
+       background-image: url('https://webgraminfotech.com/xrp_claude/website/img/bg/contact_bg02.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+   }
+
+   /* Typography Styling */
+   .main-heading {
+       font-size: 50px;
+       margin-bottom: 35px;
+       letter-spacing: -0.03em;
+       line-height: 1.2;
+   }
+
+   .sub-heading {
+       font-size: 22px;
+       font-family: 'Poppins', sans-serif;
+       color: #FFFFFF;
+       margin-top: 0px;
+       font-style: normal;
+       font-weight: 600;
+       text-transform: capitalize;
+   }
+
+   /* Button Custom Styling */
+   .btn-custom {
+       background-color: #0b1118;
+       color: white;
+       font-weight: 700;
+       letter-spacing: 1px;
+       border: 1px solid #1a2332;
+       transition: all 0.3s ease;
+       font-size: 0.9rem;
+       padding: 15px 40px;
+   }
+
+   .btn-custom:hover {
+       color: var(--neon-cyan) !important;
+       /* Bootstrap primary blue */
+       border-color: var(--neon-cyan) !important;
+       background-color: black !important;
+       cursor: pointer;
+   }
+
+   .footer-text1 {
+       font-family: 'Poppins', sans-serif;
+       color: #FFFFFF;
+       margin-top: 0px;
+       font-style: normal;
+       font-weight: 600;
+       text-transform: capitalize;
+       font-size: 18px;
+   }
+
+   /* Torn Paper Images Styling (Top & Bottom) */
+   .border-img {
+       position: absolute;
+       width: 100%;
+       left: 0;
+       z-index: 10;
+       pointer-events: none;
+   }
+
+   .top-border {
+       top: -2px;
+   }
+
+   .bottom-border {
+       bottom: -2px;
+   }
+
+
+   .content-wrapper {
+       position: relative;
+       z-index: 5;
+       padding: 20px;
+   }
+
+   /* Mobile Responsiveness */
+   @media (max-width: 768px) {
+       .main-heading {
+           font-size: 2rem;
+       }
+
+       .sub-heading {
+           font-size: 1rem;
+       }
+   }
+
+
+   /* FOOTER STYLES */
+   .footer-link {
+       Color: #030B15;
+       font-weight: 500;
+       font-size: 16px;
+       margin: 0 30px;
+       text-decoration: none;
+       transition: color 0.2s;
+   }
+
+   .footer-link:hover {
+       text-decoration: none;
+       color: var(--neon-cyan);
+   }
+
+   /* Custom Purple Button */
+   .btn-scroll-top {
+       background-color: #554add;
+       color: white;
+       width: 50px;
+       height: 50px;
+       border: none;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+
+   .btn-scroll-top:hover {
+       background-color: #4238c0;
+       color: white;
+   }
+
+   /* Typography adjustments */
+   .footer-text {
+       Color: #282F3B;
+       margin-bottom: 0;
+       font-size: 15px;
+       font-weight: 500;
+   }

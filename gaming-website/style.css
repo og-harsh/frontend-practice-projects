@@ -1,0 +1,1098 @@
+/* ====================================
+   1. VARIABLES & FONTS
+   ==================================== */
+:root {
+    --bg-color: #0c0416;
+    --bg-overlay: rgba(28, 11, 50, 0.2);
+    --primary: #da45ff;
+    --secondary: #870da5;
+    --accent: #402464;
+    --text-white: #ffffff;
+    --text-gray: #c3c6ca;
+
+    --font-display: 'Potato sans', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-candy: 'smile candy', cursive;
+}
+
+@font-face {
+    font-family: 'smile candy';
+    src: url('../font/Smile\ Candy.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Potato sans';
+    src: url('../font/Potato_sans-Bold.otf') format('woff2');
+}
+
+/* ====================================
+   2. GENERAL RESETS
+   ==================================== */
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: var(--text-white);
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ====================================
+   3. TOP BAR (Desktop)
+   ==================================== */
+.top-bar {
+    height: 100px;
+    background-color: #1c0b3233;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+}
+
+.icon-community {
+    width: 40px;
+    margin-right: 100px;
+}
+
+.brand-logo img {
+    width: 250px;
+}
+
+.top-nav a,
+.nav-link-bold {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.btn-login {
+    background-color: var(--accent);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 13px;
+    font-weight: 700;
+}
+
+.badge-text {
+    background-color: #da45ff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 11px 5px 11px;
+    border-radius: 13px;
+    border: solid 1px #eb9efe;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.badge-wrapper {
+    background-color: var(--secondary);
+    border-radius: 13px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* ====================================
+   4. MOBILE NAV
+   ==================================== */
+.mobile-nav {
+    background-color: var(--bg-overlay);
+    backdrop-filter: blur(25px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.mobile-nav .navbar-brand img {
+    width: 150px;
+}
+
+.mobile-nav .collapse {
+    background-color: #1c0b32;
+    padding: 20px;
+}
+
+/* ====================================
+   5. HERO SECTION
+   ==================================== */
+.hero-section {
+    background-image: url('assets/images/homebanner.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+/* .hero-visual { 
+    position: relative;
+    height: 300px;
+    margin-bottom: 50px;
+  }   */
+
+.vector-decoration {
+    width: 340px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
+
+.hero-typography {
+    font-family: var(--font-candy);
+    position: relative;
+    z-index: 2;
+}
+
+.comingsoon {
+    position: relative;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -10%);
+    width: 53vw;
+    height: auto;
+    pointer-events: none;
+    background: transparent !important;
+}
+
+
+
+.hero-description {
+    font-size: 22px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ====================================
+   6. MINING SECTION
+   ==================================== */
+
+    /* --- TEXT HEADER (Center me rahega) --- */
+    /* desktop */
+.homepage {
+    background-color: #0c0416;
+    overflow: hidden;
+}
+
+
+
+.container1 {
+    margin-top: 150px;
+    height: 729px;
+    width: 1198px;
+    margin: 200px auto!important;
+    padding: 0;
+    position: relative;
+}
+
+
+.text {
+    font-family: var(--font-display);
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%, -18%);
+    color: #fff !important;
+}
+
+.text h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.text h4 {
+    
+    color: #ffffff82;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.frame1 {
+    filter: blur(29px);
+    object-fit: contain;
+    width: 200%;
+    position: absolute;
+    top: -90px;
+    left: -50%;
+}
+
+.frame2 {
+    width: 45%;
+    height: 60%;
+    filter: blur(132px);
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+}
+
+.frame3 {
+    width: 45%;
+    height: 60%;
+    filter: blur(132px);
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+}
+
+.mechine1 {
+    width: 350px;
+    transition: all .4s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mechine1:hover {
+    top: -12px;
+}
+
+.mechine2 {
+    width: 290px;
+    transition: all .4s ease;
+    position: absolute;
+    top: 111px;
+    left: 37%;
+    transform: translate(-37%, 0);
+}
+
+.mechine2:hover,
+.mechine3:hover {
+    top: 98px;
+}
+
+.mechine3 {
+    width: 290px;
+    transition: all .4s ease;
+    position: absolute;
+    top: 111px;
+    right: 34%;
+    transform: translate(33%, 0);
+}
+
+
+
+.mechine4 {
+    width: 350px;
+    transition: all .4s ease;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+}
+
+.mechine4:hover,
+.mechine5:hover {
+    bottom: -27px;
+}
+
+.mechine5 {
+    width: 350px;
+    transition: all .4s ease;
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+}
+
+
+.arrow1 {
+    height: 110px;
+    width: 60px;
+    opacity: 0.2;
+    position: absolute;
+    top: 300px;
+    left: 51%;
+    transform: translate(-51%, 0);
+}
+
+.arrow2 {
+    height: 90px;
+    width: 550px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
+
+/* ====================================
+   7. NFT SECTION
+   ==================================== */
+.nft-section {
+    background-image: url('assets/images/nft-bg.png');
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 52px;
+    letter-spacing: 3px;
+    padding: 100px;
+}
+
+.nft-gallery {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Glassmorphism Card Style */
+.nft-card {
+    position: absolute;
+    background: linear-gradient(335deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.nft-card img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Scattered Layout */
+.card-1 {
+    width: 240px;
+    left: 10%;
+    top: 50px;
+}
+
+.card-2 {
+    width: 240px;
+    right: 10%;
+    top: 50px;
+}
+
+.card-3 {
+    width: 260px;
+    left: 25%;
+    top: 20px;
+    z-index: 2;
+}
+
+.card-4 {
+    width: 260px;
+    right: 25%;
+    top: 20px;
+    z-index: 2;
+}
+
+.card-main {
+    width: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    z-index: 3;
+}
+
+/* ====================================
+   8. TIMELINE SECTION
+   ==================================== */
+.timeline-section {
+    background-image: url('assets/images/timeline-bg.png');
+    background-size: cover;
+    padding-bottom: 100px;
+    position: relative;
+    margin-top: -150px;
+    /* Pull up effect */
+}
+
+.timeline-desc {
+    font-size: 20px;
+    color: var(--text-gray);
+    max-width: 600px;
+}
+
+.timeline-wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+
+/* The Graphic Line */
+.timeline-graphic {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-core {
+    width: 6px;
+    background-color: #4B316B;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+
+.line-cap {
+    width: 40px;
+}
+.text-start{
+    padding-left: 310px;
+}
+
+/* Dots Positioning */
+.timeline-dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border: 6px solid var(--bg-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot-1 {
+    top: 10%;
+}
+
+.dot-2 {
+    top: 40%;
+}
+
+.dot-3 {
+    top: 65%;
+}
+
+.dot-4 {
+    top: 90%;
+}
+
+/* Content Steps */
+.timeline-row {
+    height: 250px;
+    /* Spacing between steps */
+    align-items: center;
+}
+
+.step-label h4 {
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+}
+
+.step-label h2 {
+    font-family: var(--font-display);
+    font-size: 30px;
+}
+
+.step-detail h2 {
+    font-family: var(--font-display);
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.step-detail p {
+    color: var(--text-gray);
+    font-size: 16px;
+}
+
+.badge-soon {
+    background-color: var(--accent);
+    border-radius: 30px;
+    padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.badge-soon span {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.badge-icon {
+    width: 20px;
+}
+
+/* ====================================
+   9. CONTACT & FOOTER
+   ==================================== */
+.contact-section {
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+}
+
+.contact-card {
+    background-color: #1f1934;
+    border-radius: 40px;
+    padding: 80px;
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-family: var(--font-display);
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.discord-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.discord-link img {
+    width: 50px;
+}
+
+.site-footer {
+    background-color: var(--bg-color);
+    padding: 50px 0;
+}
+
+.footer-logo {
+    width: 180px;
+}
+
+.footer-link {
+    font-size: 17px;
+    color: white;
+}
+
+.footer-icon {
+    width: 40px;
+}
+
+.copyright {
+    color: var(--text-gray);
+    margin: 0;
+}
+
+
+
+/* ====================================
+   ADDITIONAL RESPONSIVE BREAKPOINTS
+   Covers extra common device widths and refines element scaling
+   ==================================== */
+/* z */
+
+@media (max-width: 992px) {
+  
+ 
+    .brand-logo img {
+        width: 200px;
+    }
+
+    .vector-decoration {
+        width: 300px;
+    }
+
+    .comingsoon {
+        width: 70vw;
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-logo img {
+        width: 180px;
+    }
+
+    .vector-decoration {
+        width: 260px;
+        top: 40px;
+    }
+
+    .comingsoon {
+        width: 80vw;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .badge-text {
+        font-size: 16px;
+        padding: 10px 9px 4px 9px;
+    }
+
+
+    .nft-card {
+        width: 90%;
+        position: relative;
+        margin: 12px auto;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .brand-logo img {
+        width: 150px;
+    }
+
+    .vector-decoration {
+        width: 220px;
+    }
+
+    .comingsoon {
+        width: 90vw;
+    }
+
+    .text-coming,
+    .text-soon {
+        font-size: 4.5rem;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .badge-text {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    .footer-logo {
+        width: 140px;
+    }
+
+    /* .machine {
+        width: 90%;
+    } */
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Adjust Top Bar */
+    .top-bar {
+        display: none !important;
+    }
+
+   
+    /* NFT */
+    .nft-gallery {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nft-card {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 10px;
+    }
+
+    /* Timeline */
+    .timeline-graphic {
+         display:none ; 
+         align-items: flex-start;
+    }
+
+    /* Hide complex line on mobile */
+    .timeline-row {
+        height: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .timeline-row .col-5 {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .timeline-row .col-2 {
+        display: none;
+    }
+
+    /* Hero Text Size */
+    .text-coming,
+    .text-soon {
+        font-size: 6rem;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* Contact */
+    .contact-card {
+        padding: 40px 20px;
+    }
+
+    .contact-card h2 {
+        font-size: 30px;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* NFT */
+    .section-title {
+        font-size: 28px;
+        padding: 0px 20px 50px 20px;
+    }
+
+    .nft-gallery {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nft-card {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 10px;
+    }
+
+    /* Timeline */
+    .timeline-graphic {
+        display: none;
+    }
+
+    /* Hide complex line on mobile */
+    .timeline-row {
+        height: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .timeline-row .col-5 {
+        width: 45%;
+        text-align: end !important;
+    }
+
+    .timeline-row .col-2 {
+        display: none;
+    }
+
+    /* Hero Text Size */
+    .text-coming,
+    .text-soon {
+        font-size: 6rem;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* Contact */
+    .contact-card {
+        padding: 40px 20px;
+    }
+
+    .contact-card h2 {
+        font-size: 30px;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* keep previous mobile overrides but ensure tighter spacing */
+    .hero-section{
+        height: 70vh !important;
+    }
+    .brand-logo img {
+        width: 140px;
+    }
+
+    .vector-decoration {
+        width: 200px;
+    }
+
+    .comingsoon {
+        width: 95vw;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    .badge-text {
+        font-size: 13px;
+        padding: 7px 7px;
+    }
+
+    /* .machine { width: 95%; }  */
+    .nft-card {
+        width: 95%;
+        margin: 8px auto;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand-logo img {
+        width: 130px;
+    }
+
+    .vector-decoration {
+        width: 180px;
+        top: 20px;
+    }
+
+    .comingsoon {
+        width: 98vw;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .badge-text {
+        font-size: 12px;
+        padding: 6px 6px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+    .text-start{
+        padding-left: 0px !important;
+    }
+}
+
+
+
+@media only screen and (max-width:1199px) {
+    .container1 {
+        width: 988px;
+    }
+
+    .frame1 {
+        top: -55px;
+        left: -71%;
+        width: 250%;
+    }
+
+    .arrow2 {
+        height: 70px;
+        width: 350px;
+    }
+
+    .mechine2 {
+        left: 33%;
+        transform: translate(-34%, 0);
+    }
+
+    .mechine3 {
+        right: 30%;
+        transform: translate(32%, 0);
+    }
+
+
+}
+
+
+
+/* MEDIA 2 */
+
+
+@media only screen and (max-width:991px) {
+
+
+    .container1 {
+        width: 745px !important;
+        height: 850px;
+    }
+
+    .arrow1 {
+        height: 80px;
+        width: 40px;
+    }
+
+    .arrow2 {
+        height: 50px;
+        width: 300px;
+    }
+
+    .mechine2 {
+        left: 25%;
+        transform: translate(-25%, 0);
+    }
+
+    .mechine3 {
+        right: 20%;
+        transform: translate(20%, 0);
+    }
+
+    .text {
+        bottom: 32%;
+    }
+}
+
+/* MEDIA 3 */
+
+
+@media only screen and (max-width:765px) {
+
+
+    .container1 {
+        width: 525px !important;
+        height: 665px;
+    }
+
+    .arrow1 {
+        height: 80px;
+        width: 50px;
+        top: 250px;
+    }
+
+    .arrow2 {
+        height: 40px;
+        width: 225px;
+    }
+
+    .mechine1 {
+        width: 275px;
+    }
+
+    .mechine2 {
+        width: 215px;
+        left: 21%;
+        top: 90px;
+        transform: translate(-21%, 0);
+    }
+
+    .mechine3 {
+        width: 215px;
+        top: 90px;
+        right: 16%;
+        transform: translate(16%, 0);
+    }
+
+    .mechine4,
+    .mechine5 {
+        width: 225px;
+        bottom: -20px;
+    }
+
+    .text {
+        bottom: 27%;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .text h4 {
+
+        font-size: 15px;
+
+    }
+}
+
+/* MEDIA 3 */
+
+
+@media only screen and (max-width:575px) {
+
+
+    .container1 {
+        width: 250px !important;
+        height: 425px;
+        margin: 80px auto!important;
+    }
+
+    .arrow1 {
+        height: 50px;
+        width: 30px;
+        top: 150px;
+    }
+
+    .arrow2 {
+        height: 25px;
+        width: 98px;
+        opacity: 0.3;
+    }
+
+    .mechine1 {
+        width: 175px;
+    }
+
+    .mechine2 {
+        width: 140px;
+        left: -1%;
+        top: 55px;
+        transform: translate(0%, 0);
+    }
+
+    .mechine3 {
+        width: 140px;
+        top: 55px;
+        right: -8%;
+        transform: translate(-4%, 0);
+    }
+
+    .mechine4,
+    .mechine5 {
+        width: 125px;
+        bottom: 0px;
+    }
+
+    /* .text {
+    top: 38%;
+    } */
+
+    .text h1 {
+        font-size: 22px;
+    }
+
+    .text h4 {
+
+        font-size: 12px;
+
+    }
+}

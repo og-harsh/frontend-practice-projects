@@ -1,0 +1,654 @@
+.container-fluid {
+    background-color: #f9fdff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #2c3e50;
+   
+}
+.navbar{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.navbar-brand span {
+    color: #4A90E2; 
+}
+
+.nav-link {
+ text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    padding: 5px 0;
+    margin-left: 20px;
+ 
+    position: relative;
+    transition: color 0.3s ease;
+}
+ .nav-link:hover {
+    color: #4A90E2;
+    text-decoration: upperline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;    
+    width: 0;
+    height: 2px;
+    background-color: #4A90E2;  
+    transition: width 0.3s ease-in-out;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.nav-link.active {
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+.information-section {
+    padding: 1px 55px;
+}
+.intro-text {
+    font-size: 16px;
+    color: #6c757d;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  
+}
+
+.intro-line {
+    width: 45px;
+    height: 3px;
+    background-color: #4A90E2;
+    border: none;
+    opacity: 1;
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+
+.text-center .intro-line {
+    margin-left: 0px;
+    margin-right: auto;
+    margin-bottom: 85px;
+}
+
+.name-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.title-heading {
+      font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #758398;
+    font-weight: 700;
+   margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.contact-info p {
+    margin-left: 50px;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+}
+
+
+
+.contact-info i {
+    color: #4A90E2;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.image-container::before {
+   content: '';
+    position: absolute;
+    width: 185%;
+    height: 240%;
+    left: -5%;
+    top: -138%;
+    background: radial-gradient(circle at 100% 50%, rgba(255, 255, 255, 0.5), rgba(34, 52, 99, 0.1));
+    border-radius: 50%;
+    z-index: 0;
+   
+}
+
+
+.profile-img {
+    width: 95%;
+    height: 50%;
+    left: 2%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative; 
+    z-index: 1;
+    object-fit: cover;
+}
+.about-section {
+    padding: 1px 55px;
+    margin-top: 175px;
+}
+.about-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700; 
+    margin-bottom: 130px;   
+}
+
+.about-section a{
+    margin-left: 75px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #009bdf;
+    text-decoration: none;
+}
+.custom-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #212529; 
+}
+.about-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: #009bdf;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.custom-blue-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #889cb9; 
+}
+
+.text-muted p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black; 
+    margin-right: 100px;
+}
+.text-muted p.para-2 {
+    margin-top: 20px;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 18px;
+        line-height: 1.6;
+        color: #758898;
+}
+
+        .what-i-do-section {
+            padding: 180px 100px;
+            overflow: hidden;
+        }
+
+        .section-title {
+           
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            font-size: 50px;
+            color: #212529;
+            margin-bottom: 35px;
+        }
+
+        .section-intro {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            color: #758898;
+            font-size: 17px;
+            max-width: 600px;
+        }
+
+        .service-card {
+            padding: 70px;
+        }
+
+        .service-icon {            
+            font-size: 2.5rem;
+            color: #009bdf; 
+            margin-bottom: 1rem;
+        }
+
+        .service-card h4 {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 21px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: #343a40;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #758898;
+            font-size: 17px;
+            line-height: 1.6;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .arrow-icon {
+            font-size: 7rem;
+            color: #009bdf;
+        }
+
+    .parallax {
+    background-image: url("https://i.pinimg.com/736x/78/74/3a/78743ae8e05bc6e1d74069e9dc438b06.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.content-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 100px;
+}
+
+
+.skill-item {
+    margin-bottom: 1.75rem;
+}
+
+.skill-name {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.progress {
+    height: 21px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background-color: #009bdf;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 12px;
+    color: #fff;
+    line-height: 18px;
+}
+
+.experience-item {
+    display: flex;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+.experience-info {
+    flex: 0 0 120px; 
+    margin-right: 35px;
+    position: relative;
+}
+
+.experience-info .date {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 60px;
+}
+
+.experience-info .company {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.experience-details {
+    flex-grow: 1;
+    position: relative;
+}
+
+.experience-details::before {
+   content: '';
+    position: absolute;
+    left: -169px;
+    top: 54px;
+    height: 1px;
+    width: 105px;
+    background-color: #ccc;
+}
+.experience-details::after {
+    content: '❯';
+    position: absolute;
+    left: -68px;
+    top: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.job-title {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #009bdf;
+    margin-bottom: 0.75rem;
+}
+
+.job-description {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.custom-portfolio-item {
+  font-family: 'Times New Roman', Times, serif; 
+  padding: 1.5rem;
+  
+}
+
+.custom-portfolio-item h3 {
+  font-weight: bold;
+  font-size: 56px;
+}
+
+.custom-portfolio-item .bi-arrow-right {
+  font-size: 100px; 
+  color: #009bdf; 
+}
+
+.portfolio-img {
+    width: 85%;
+   margin-left: 100px;
+}
+
+.footer{
+    background-color: white;
+    padding: 120px;   
+}
+.the-end {
+    font-family:  'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: black; 
+   
+
+} 
+
+  .get-in-touch-heading {
+      font-family: 'Playfair Display', serif;
+    font-size: 80px; 
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px; 
+  }
+.get-in-touch-heading:hover::after {
+    background-color: #4A90E2;
+}
+  .get-in-touch-heading:hover {
+    color: #4A90E2;
+  }
+  .get-in-touch-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px; 
+    background-color: black;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .list-unstyled a {
+    color: #6c757d; /* Muted gray color */
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .list-unstyled a:hover {
+    color: black;
+  }
+  
+  hr {
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+
+  .text-muted {
+    font-size: 0.8rem;
+  }
+  .in-end  {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6c757d;
+    margin-top: 50px;
+  }
+.footer-divider {
+
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+  /* Responsive Styles */
+@media (max-width: 1200px) {
+    .about-section, .information-section {
+        padding: 1px 25px;
+    }
+    .what-i-do-section {
+        padding: 100px 30px;
+    }
+    .footer {
+        padding: 80px;
+    }
+    .portfolio-img {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .name-heading {
+        font-size: 3.5rem;
+    }
+    .title-heading {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .about-section h1,
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    .custom-heading {
+        font-size: 2.2rem;
+    }
+    .get-in-touch-heading {
+        font-size: 40px;
+    }
+    .footer {
+        padding: 40px;
+    }
+    .portfolio-img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .service-card {
+        padding: 30px;
+    }
+    .content-wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .information-section,
+    .about-section {
+        padding: 1px 10px;
+        margin-top: 60px;
+    }
+    .name-heading {
+        font-size: 2.2rem;
+    }
+    .title-heading {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .about-section h1,
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .custom-heading {
+        font-size: 1.5rem;
+    }
+    .get-in-touch-heading {
+        font-size: 28px;
+    }
+    .footer {
+        padding: 20px;
+    }
+    .portfolio-img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .service-card {
+        padding: 15px;
+    }
+    .content-wrapper {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .experience-item {
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .experience-info {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .experience-details::before,
+    .experience-details::after {
+        display: none;
+    }
+    .col-md-6, .col-lg-6, .col-lg-4, .col-md-4, .col-md-8, .col-md-2 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .nav-link {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .image-container::before {
+        width: 250%;
+        height: 300%;
+        left: -25%;
+        top: -200%;
+    }
+   
+    .profile-img {
+        width: 300px;
+        height: 300px;
+    }
+    .about-section h1,
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .custom-heading {
+        font-size: 1rem;
+    }
+    .get-in-touch-heading {
+        font-size: 18px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .portfolio-img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .service-card {
+        padding: 8px;
+    }
+    .content-wrapper {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .contact-info p {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .about-section a {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .about-section h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .text-muted p, .text-muted p.para-2 {
+        font-size: 14px;
+        margin-right: 0;
+    }
+.portfolio-img .container {
+    flex-direction: column !important;
+    align-items: center !important;
+}
+}

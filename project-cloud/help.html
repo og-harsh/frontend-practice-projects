@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        /* --- Custom Styling --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+
+        }
+
+        /* Background Image Setup */
+        .background-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 507px;
+            z-index: -1;
+
+            /* REPLACE 'your-background.jpg' below with your image path */
+            background-image: url('https://webgraminfotech.com/xrp_claude/website/img/bg/breadcrumb-bg.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* Optional: Adds a dark tint so white text is easier to read */
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: overlay;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: relative;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        /* Logo Image Style */
+        .logo-img {
+            height: 71px;
+            /* Adjust this to make your logo bigger/smaller */
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-link:hover {
+            opacity: 0.7;
+        }
+
+        .btn-cta {
+            background-color: #00c3ff;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            border-radius: 4px;
+            border: none;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-cta:hover {
+            background-color: #009ecf;
+            color: #fff;
+        }
+
+        /* Hero Section Centering */
+        .hero-section {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            padding-top: 150px;
+            padding-bottom: 80px;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .breadcrumbs {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ccc;
+            font-weight: 600;
+        }
+
+        .breadcrumbs span {
+            margin: 0 10px;
+            color: #666;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+
+        .breadcrumbs a.active {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            color: #fff;
+        }
+
+        .rough-divider1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+
+            line-height: 0;
+
+        }
+
+        .rough-divider1 img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* messaging */
+        /* --- Contact Section Styles --- */
+
+        .contact-section {
+            position: relative;
+            /* Background logic fix */
+            background: url('https://webgraminfotech.com/xrp_claude/website/img/bg/contact_bg02.jpg') no-repeat center center/cover;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        /* Background Image styling */
+        .section-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
+        }
+
+        /* Top Rough/Torn Line Divider (Image Container) */
+        .rough-divider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 3;
+            line-height: 0;
+
+        }
+
+        /* Divider Image Styling */
+        .divider-img {
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+        }
+
+        /* Typography */
+        .section-title {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Custom Glass/Dark Inputs */
+        .custom-input {
+            background-color: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-size: 1rem;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .custom-input::placeholder {
+            color: #aaa;
+        }
+
+        .custom-input:focus {
+            background-color: rgba(30, 41, 59, 0.9);
+            border-color: #00c3ff;
+            box-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
+            color: #fff;
+        }
+
+        /* Cyan Button */
+        .btn-cta-cyan {
+            background-color: #00c3ff;
+            color: #fff;
+            font-weight: 700;
+            padding: 12px 40px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-cta-cyan:hover {
+            background-color: #009ecf;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER STYLES */
+        .footer-link {
+            Color: #030B15;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0 30px;
+            text-decoration: none;
+            transition: color 0.2s;
+           
+        }
+
+        .footer-link:hover {
+            text-decoration: none;
+            color: var(--neon-cyan);
+        }
+        .bottom-divider-img {
+       position: relative;
+       width: 100%;
+       left: 0;
+       z-index: 10;
+       pointer-events: none;
+   }
+
+   
+
+   .bottom-divider-img {
+       bottom: -51px;
+   }
+
+
+        /* Custom Purple Button */
+        .btn-scroll-top {
+            background-color: #554add;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-scroll-top:hover {
+            background-color: #4238c0;
+            color: white;
+        }
+
+        /* Typography adjustments */
+        .footer-text {
+            Color: #282F3B;
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-wrapper"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-5">
+
+            <a class="navbar-brand" href="#">
+                <img src="https://webgraminfotech.com/xrp_claude/website/images/logo.png" alt="Logo" class="logo-img">
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#index.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <a href="#" class="btn btn-cta">Start Investing</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Get In Touch</h1>
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <span>&#8250;</span>
+                <a href="#" class="active">Help</a>
+            </div>
+        </div>
+        <div class="rough-divider1">
+            <img src="https://webgraminfotech.com/xrp_claude/website/img/bg/breadcrumb_shape.png" alt="divider"
+                class="divider-img">
+        </div>
+    </section>
+
+
+
+    <!-- ======== -->
+    <!-- DIVIDER  -->
+    <section class="contact-section position-relative text-white py-5">
+
+        <div class="rough-divider">
+            <img src="https://webgraminfotech.com/xrp_claude/website/img/bg/contact_shape01.png" alt="divider"
+                class="divider-img">
+        </div>
+
+        <div class="section-bg"></div>
+
+        <div class="container py-5" style="position: relative; z-index: 2;">
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold mb-5 section-title">Lets Get in touch with us</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" class="form-control custom-input" placeholder="Enter Name">
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="email" class="form-control custom-input" placeholder="Enter Email">
+                        </div>
+
+                        <div class="mb-5">
+                            <textarea class="form-control custom-input" rows="5" placeholder="Enter Message"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-cta-cyan">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <img src="https://webgraminfotech.com/xrp_claude/website/img/bg/choose_shape02.png" alt="divider"
+            class="bottom-divider-img">
+    </section>
+
+    <!--   FOOTER   -->
+
+    <footer class="bg-white py-5 mt-auto">
+        <div class="container">
+
+
+
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="#" class="footer-link">Law Enforcement Request Guidelines</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div class="position-relative mt-5 mb-5">
+                <hr class="border-secondary opacity-25">
+
+                <button
+                    class="btn btn-scroll-top rounded-circle position-absolute top-0 start-50 translate-middle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-up fs-4"></i>
+                </button>
+            </div>
+
+            <div class="row align-items-center footer-text pt-2">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Copyright 2025 Xrp Claude.
+                </div>
+
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <span>scroll Top</span>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    Lend your XRP securely and earn stable monthly returns.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

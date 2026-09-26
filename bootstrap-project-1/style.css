@@ -1,0 +1,301 @@
+html {
+  scroll-behavior: smooth;
+}
+#team,#work,#price,#contact{
+     scroll-margin-top: 55px; 
+}
+.navbar-custom {
+    background-color:black;
+}
+
+.nav-link {
+    font-weight: 600;
+    padding: 10px 10px;
+    color: white !important;
+}
+
+
+.navbar-brand {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    color: black;
+    background-color: white;
+    border-radius: 0;
+}
+
+
+
+.dropdown-menu a:hover {
+    background-color: #b8b4b4;
+}
+
+.search-icon {
+    padding-right: 20px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-over {
+    padding: 5px 20px;
+    font-size: 29px;
+
+    position: absolute;
+    top: 90%;
+    /* vertically center */
+    left:10%;
+    /* horizontally center */
+    transform: translate(-50%, -50%);
+    /* perfect centering */
+}
+
+.card-group {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.pricing-header {
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bg-basic {
+    background-color: black;
+}
+
+.bg-pro {
+    background-color: gray;
+}
+
+.bg-premium {
+    background-color: black;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-section {
+    background:#f0f0f0 !important;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.contact-info {
+    flex: 1;
+
+}
+
+.contact-info h2 {
+    font-weight: 400;
+    font-size: 27px;
+    border-bottom: 4px solid teal;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact-info h4 {
+    margin-top: 20px;
+}
+
+.contact-card {
+    background:  white;
+    padding: 20px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-black {
+    border-radius: 0;
+    background: black;
+    color: white;
+}
+
+.btn-black:hover {
+    color: black;
+    background: #b8b4b4;
+}
+
+.image-section {
+    filter: grayscale(45%);
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.social-icons a {
+    background-color: #009688;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+h2{
+    font-weight: 100;
+}
+.btn-pricing{
+    padding: 12px 24px;
+    color: white;
+    background: #009688;
+    border: 0;
+}
+.btn-pricing:hover{
+    color: black;
+    background-color: #b8b4b4;
+}
+.nav-link:hover{
+    color: black !important;
+    background-color: #ffffff;
+}
+a.navbar-brand:hover{
+    color: #000;
+    background-color: #b8b4b4;
+}
+/* --- Sidebar aur Hamburger Icon ke liye Styles --- */
+
+/* Sidebar ka Base Style (shuru mein chupa hua) */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -250px; /* Screen ke bahar */
+    background-color: #222; /* Aap apna color de sakte hain */
+    padding-top: 60px;
+    transition: right 0.4s ease-in-out; /* Slide animation */
+}
+
+/* Yeh class JS se lagegi jab sidebar kholna ho */
+.sidebar.open {
+    right: 0; /* Sidebar ko screen par le aayega */
+}
+
+/* Sidebar ke links */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    color: white;
+}
+
+/* Sidebar ka Close Button */
+.close-sidebar-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 36px;
+    line-height: 1;
+    color: white;
+}
+
+/* Hamburger Icon ka default style (desktop par chupa hua) */
+#hamburger-icon {
+    display: none; /* Desktop par hide rahega */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white; /* Aap apna color de sakte hain */
+}
+
+/* ========== MEDIA QUERY (600px par changes) ========== */
+@media (max-width: 600px) {
+    /* Aapke original nav links ko hide karo */
+    #main-nav-links {
+        display: none !important; /* !important zaroori ho sakta hai agar d-flex override kar raha ho */
+    }
+
+    /* Hamburger icon ko dikhao */
+    #hamburger-icon {
+        display: block;
+    }
+}

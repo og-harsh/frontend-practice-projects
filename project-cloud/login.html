@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - XRP Claude</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-container {
+            min-height: 100vh;
+        }
+
+        /* --- Left Side Styling --- */
+        .left-panel {
+            padding: 3rem 4rem; /* Content spacing */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Pushes footer to bottom */
+            background-color: #ffffff;
+        }
+
+        .logo-img {
+            width: 50px; /* Adjust size based on your logo */
+            margin-bottom: 3rem;
+        }
+
+        .login-header h1 {
+            font-weight: 300;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+
+        .login-header p {
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+
+        .form-control {
+            border-radius: 4px;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            margin-bottom: 1rem;
+        }
+
+        .forgot-link {
+            text-decoration: none;
+            color: #0d6efd;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-custom {
+            background-color: #2979ff; /* The bright blue from image */
+            border: none;
+            color: white;
+            padding: 0.75rem;
+            font-weight: 500;
+            border-radius: 4px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0d47a1;
+            color: white;
+        }
+
+        .footer-links {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: #6c757d;
+            margin-right: 15px;
+        }
+
+        /* --- Right Side Styling --- */
+        .right-panel {
+            /* Dark Blue Background matching the image */
+            background: linear-gradient(135deg, #1a237e 0%, #0d1b66 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* This is the illustration image */
+        .illustration-img {
+            max-width: 80%;
+            height: auto;
+        }
+        
+        /* Background graphic effects (optional aesthetic) */
+        .right-panel::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://webgraminfotech.com/xrp_claude/assets/images2/ath-gfx.pnghttps://webgraminfotech.com/xrp_claude/assets/images2/ath-gfx.png'); /* Optional pattern overlay */
+            opacity: 0.1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid main-container">
+        <div class="row h-100 g-0"> <div class="col-lg-5 col-md-6 left-panel">
+                
+                <div>
+                    <img src="https://webgraminfotech.com/xrp_claude/website/images/logo.png" alt="Logo" class="logo-img">
+
+                    <div class="login-header">
+                        <h1>Sign in</h1>
+                        <p>with your Xrp Claude Account</p>
+                    </div>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        </div>
+
+                        <a href="#" class="forgot-link">Forgot password?</a>
+
+                        <button type="submit" class="btn btn-custom w-100">Sign In</button>
+                    </form>
+
+                    <div class="mt-4">
+                        <span class="text-secondary">Don't have an account? </span>
+                        <a href="#" style="text-decoration: none; color: #2979ff;">Sign up here</a>
+                    </div>
+                </div>
+
+                <div class="footer-links mt-5">
+                    <div class="mb-2">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                    <div>
+                        &copy; Copyright 2025 Xrp Claude.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 right-panel d-none d-md-flex">
+                <img src="https://webgraminfotech.com/xrp_claude/assets/images/ath-gfx.png" alt="Illustration" class="illustration-img">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('assets/image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    background-color: #f3f3f3;
+    color: #0c0c0c;
+}
+
+.search-icon {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    color: white;
+    font-size: 15px;
+}
+
+.hero-text {
+    position: absolute;
+    left: 50%;
+    bottom: -305px;
+    /* Adjust distance from bottom as needed */
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+}
+.hero-text p{
+    color: white;
+}
+
+.head h1 {
+    margin-top: 70px;
+    padding: 0px 670px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.head h2 {
+    margin: 30px;
+    padding: 0px 650px;
+    color: #0c0c0c;
+    font-size: 15px;
+    opacity: 0.3;
+    font-style: italic;
+}
+
+.head p {
+    padding: 0px 330px;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+
+
+    line-height: 1.5;
+    /* Adjust as needed */
+    max-height: max-content;
+    /* 6 lines */
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 100px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.text1 {
+    position: relative;
+    top: -100px;
+    left: 137px;
+
+}
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    margin: 30px auto;
+
+}
+
+.line {
+    background-color: #0c0c0c;
+    height: 900px;
+
+}
+
+header {
+    margin: 0px 50px;
+    padding: 60px;
+    color: rgb(244, 241, 241);
+}
+
+
+.months {
+
+
+    font-size: 18px;
+    left: 50%;
+    margin: 0px 355px;
+
+    max-width: 800px;
+
+
+}
+
+.month-box1 {
+
+    display: flex;
+    border-bottom: #040404 solid 1px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.month-box2 {
+    display: flex;
+    border-bottom: #040404 solid 1px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.month-box3 {
+
+    display: flex;
+    border-bottom: #040404 solid 1px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.sold-out {
+    position: relative;
+    top: 0;
+    background-color: red;
+
+
+    border: #0c0c0c solid 1px;
+    color: white;
+
+    font-weight: bold;
+
+}
+.num p{
+    
+    justify-content: flex-end;
+}
+.bold-black {
+    font-weight: bold;
+    background-color: #040404;
+    color: rgb(253, 251, 251);
+    text-align: center; 
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    line-height: 24px;
+    margin-left: 680px;
+
+    
+}
+
+.tour-cities {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.para1 {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.para1 h2 {
+    font-size: 17px;
+}
+
+
+
+
+.city {
+    background-color: rgb(252, 248, 248);
+    width: 250px;
+    height: 400px; 
+}
+
+
+
+
+button:hover {
+    background-color: #040404;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 60px;
+}
+
+.contact-header {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.contact-header p {
+    font-style: italic;
+    color: gray;
+    margin: 30px;
+}
+
+/* Body split */
+.contact-body {
+    display: flex;
+    height: 250px;
+
+}
+
+/* Info on Left */
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+/* Form on Right */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 5px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    height: 40px;
+}
+
+/* Button aligned right */
+button {
+
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button2 {
+    width: 90px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+
+.social-icons {
+    color: #555;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 60px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    position: relative;
+    margin-top: 20px;
+    top: -5px;
+}

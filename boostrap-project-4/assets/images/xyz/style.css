@@ -1,0 +1,21 @@
+ .carousel-caption {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .carousel-item img, .carousel-item video {
+      object-fit: cover;
+      height: 100vh;
+      width: 100%;
+    }
+     .collage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .collage .row, 
+    .collage .col {
+      margin: 0;
+      padding: 0;
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Crush | Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 class="glitch-text">CODE_CRUSH</h1>
+            <p class="subtitle">CLICK.TO.DESTROY()</p>
+        </header>
+
+        <div class="score-panel glass-panel">
+            <div class="score-item">
+                <span class="score-label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">TIME</span>
+                <span id="timer">30</span>
+            </div>
+            <div class="score-item">
+                <span class="score-label">COMBO</span>
+                <span id="combo">x1</span>
+            </div>
+        </div>
+
+        <button id="startBtn" class="neon-btn">START GAME</button>
+
+        <div id="gameArea" class="game-area">
+            <!-- Code elements will appear here -->
+        </div>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2>GAME OVER</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn" class="neon-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
